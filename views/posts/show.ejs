@@ -16,8 +16,10 @@
     <a href="/" class="btn btn-secondary">All Articles</a>
     <a href="/posts/edit/<%= post.id %>" class="btn btn-info">Edit</a>
 
-    <div>
-      <%- post.sanitizedHtml %>
+    <div class="card mt-4">
+        <div class="card-body">
+            <%- post.sanitizedHtml %>
+        </div>
     </div>
   </div>
 </body>

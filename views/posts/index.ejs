@@ -4,11 +4,28 @@
         <meta name='viewport' content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            #Header{text-align: center;}
+            #NewBtn:hover{
+                background-color: rgb(133,194,155);
+                transition-duration: 0.6s;
+            }
+            #Plus{display: block;
+                width:8%;
+            margin:0 auto;}
+
+        </style>
     </head>
     <body>
         <div class="container">
-            <h1 class="mb-4">Blog Posts</h1>
-            <a href="/posts/new" type="button" class="btn btn-success">New Post</a>
+            <h1 class="mb-4" id="Header">Freshtuna's Blog </h1>
+            <a href="/posts/new">
+            <div class="card mt-4" id="NewBtn">
+                <div class="card-body">
+                    <img id="Plus" src="https://img.icons8.com/doodle/344/plus--v1.png">
+                </div>
+            </div>
+            </a>
 
             <% posts.forEach(post => { %>
                 <div class="card mt-4">
