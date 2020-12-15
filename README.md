@@ -2,7 +2,7 @@
 
 Markdown blog made with node.js & express
 
-url : http://54.180.120.109:5000/
+url : http://54.180.119.70:5000/
 
 -----
 
